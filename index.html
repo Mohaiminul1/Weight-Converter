@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pound to Kilogram Weight Converter</title>
+	<style>
+		body{
+			background-color: grey;
+		}
+	</style>
+</head>
+<body>
+	<h2>Weight Converter</h2>
+	<p>Please enter the value in pounds to get converted to kilograms.</p>
+	<p>
+		<label>Pounds</label>
+		<input type="number" placeholder="Pounds" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+	</p>
+
+	<p>Kilogram: <span id="outputkilograms"></span>
+    </p>
+
+    <script>
+    	function weightConverter(valnum)
+    	{
+    		document.getElementById("outputkilograms").innerHTML = valnum/2.2046;
+    	}
+    </script>
+
+</body>
+</html>
